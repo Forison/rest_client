@@ -4,3 +4,8 @@
   get_requests.each do | url |
     puts RestClient.get(url)
   end
+
+
+  puts RestClient.post("http://localhost:3000/users/new/", {name:"k"} )
+
+
